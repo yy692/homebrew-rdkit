@@ -4,6 +4,7 @@ class Rdkit < Formula
   homepage "http://rdkit.org/"
   url "https://github.com/yy692/rdkit/archive/yy692test.tar.gz"
   sha256 ""
+  version "test"
 
   head do
     url 'https://github.com/yy692/rdkit.git'
