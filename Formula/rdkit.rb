@@ -2,11 +2,11 @@ require 'formula'
 
 class Rdkit < Formula
   homepage "http://rdkit.org/"
-  url "https://github.com/rdkit/rdkit/archive/Release_2019_03_2.tar.gz"
-  sha256 "230f04bdec6ddeb29d83a212bd0f2a8d2340385fcabf5fc8f3d2c1b20e4cd83c"
+  url "https://github.com/yy692/rdkit/archive/yy692test.tar.gz"
+  sha256 ""
 
   head do
-    url 'https://github.com/rdkit/rdkit.git'
+    url 'https://github.com/yy692/rdkit.git'
   end
 
   option 'with-java', 'Build Java wrapper'
