@@ -3,7 +3,7 @@ require 'formula'
 class Rdkit < Formula
   homepage "http://rdkit.org/"
   url "https://github.com/yy692/rdkit/archive/yy692test.tar.gz"
-  sha256 ""
+  sha256 "1ae45376ca00fc1287631bfb109dcccb4fa7cbfda44994998112b55aa4b3f236"
   version "test"
 
   head do
