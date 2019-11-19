@@ -2,8 +2,8 @@ require 'formula'
 
 class Rdkit < Formula
   homepage "http://rdkit.org/"
-  url "https://github.com/yy692/rdkit/archive/v1.4-beta.8.tar.gz"
-  sha256 "cd466a3c4ba2f9da10580ce65fcbd9e0c4683a6a241aeba2c8843e73aea77e36"
+  url "https://github.com/yy692/rdkit/archive/v1.4-beta.9.tar.gz"
+  sha256 "0fe2ab866b9da02d1b3f8054884cfec5d283b9cf7df4f51271da459792a78dc6"
 
   head do
     url 'https://github.com/yy692/rdkit.git'
@@ -55,8 +55,9 @@ class Rdkit < Formula
 
     args << '.'
     system "cmake", *args
+    system "make", "-j#{ENV.make_jobs}"
     #system "make", "-j#{ENV.make_jobs} VERBOSE=1"
-    system "make", "VERBOSE=1"
+    #system "make", "VERBOSE=1"
     system "make install"
 
     # Remove the ghost .cmake files which will cause a warning if we install them to 'lib'
